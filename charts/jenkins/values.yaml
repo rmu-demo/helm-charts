@@ -90,7 +90,7 @@ controller:
   #   - name: http_proxy
   #     value: "http://192.168.64.1:3128"
   # Set min/max heap here if needed with:
-  # javaOpts: "-Xms512m -Xmx512m"
+  javaOpts: "-Xms512m -Xmx4096m"
   # jenkinsOpts: ""
   # If you are using the ingress definitions provided by this chart via the `controller.ingress` block the configured hostname will be the ingress hostname starting with `https://` or `http://` depending on the `tls` configuration.
   # The Protocol can be overwritten by specifying `controller.jenkinsUrlProtocol`.
@@ -250,10 +250,10 @@ controller:
     - workflow-aggregator:latest
     - credentials-binding:latest
     - git:latest
-    - google-oauth-plugin:latest
-    - google-source-plugin:latest
-    - google-kubernetes-engine:latest
-    - google-storage-plugin:latest
+#    - google-oauth-plugin:latest
+#    - google-source-plugin:latest
+#    - google-kubernetes-engine:latest
+#    - google-storage-plugin:latest
     - blueocean:latest
     - maven-plugin:latest
     - junit:latest
