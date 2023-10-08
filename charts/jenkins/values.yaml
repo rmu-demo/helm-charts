@@ -249,6 +249,15 @@ controller:
     - workflow-aggregator:596.v8c21c963d92d
     - git:5.1.0
     - configuration-as-code:1670.v564dc8b_982d0
+
+  # Set to false to download the minimum required version of all dependencies.
+  installLatestPlugins: true
+
+  # Set to true to download latest dependencies of any plugin that is requested to have the latest version.
+  installLatestSpecifiedPlugins: false
+
+  # List of plugins to install in addition to those listed in controller.installPlugins
+  additionalPlugins:
     - workflow-aggregator:latest
     - credentials-binding:latest
     - google-oauth-plugin:latest
@@ -261,15 +270,6 @@ controller:
     - plain-credentials:latest
     - ssh-credentials:latest
     - strict-crumb-issuer:latest
-
-  # Set to false to download the minimum required version of all dependencies.
-  installLatestPlugins: true
-
-  # Set to true to download latest dependencies of any plugin that is requested to have the latest version.
-  installLatestSpecifiedPlugins: false
-
-  # List of plugins to install in addition to those listed in controller.installPlugins
-  additionalPlugins: []
 
   # Enable to initialize the Jenkins controller only once on initial installation.
   # Without this, whenever the controller gets restarted (Evicted, etc.) it will fetch plugin updates which has the potential to cause breakage.
