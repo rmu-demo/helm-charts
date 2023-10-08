@@ -249,18 +249,18 @@ controller:
     - workflow-aggregator:596.v8c21c963d92d
     - git:5.1.0
     - configuration-as-code:1670.v564dc8b_982d0
-    # - workflow-aggregator:latest
-    # - credentials-binding:latest
-#    - google-oauth-plugin:latest
-#    - google-source-plugin:latest
-#    - google-kubernetes-engine:latest
-#    - google-storage-plugin:latest
-    # - blueocean:latest
-    # - maven-plugin:latest
-    # - junit:latest
-    # - plain-credentials:latest
-    # - ssh-credentials:latest
-    # - strict-crumb-issuer:latest
+    - workflow-aggregator:latest
+    - credentials-binding:latest
+    - google-oauth-plugin:latest
+    - google-source-plugin:latest
+    - google-kubernetes-engine:latest
+    - google-storage-plugin:latest
+    - blueocean:latest
+    - maven-plugin:latest
+    - junit:latest
+    - plain-credentials:latest
+    - ssh-credentials:latest
+    - strict-crumb-issuer:latest
 
   # Set to false to download the minimum required version of all dependencies.
   installLatestPlugins: true
