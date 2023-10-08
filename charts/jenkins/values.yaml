@@ -258,8 +258,8 @@ controller:
   # List of plugins to install in addition to those listed in controller.installPlugins
   additionalPlugins:
     - credentials-binding:latest
-    - google-oauth-plugin:latest
-    - google-source-plugin:latest
+#    - google-oauth-plugin:latest
+#    - google-source-plugin:latest
     - google-kubernetes-engine:latest
     - google-storage-plugin:latest
     - blueocean:latest
